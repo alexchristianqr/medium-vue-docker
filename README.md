@@ -1,24 +1,20 @@
 # medium-vue-docker
 
-## Project setup
-```
-npm install
+Post medium Vue3 + Nginx + Docker + Docker-Compose
+
+## Run with docker
+
+```bash
+# Crear imagen con docker
+docker build -t app .
+
+# Crear un contenedor a partir de una imagen con docker en el puerto X
+docker run -dp 80:80 app
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Run with docker-compose
 
-### Compiles and minifies for production
+```bash
+# Crear imagen con docker
+docker-compose up -d --build
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

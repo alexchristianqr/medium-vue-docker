@@ -1,0 +1,11 @@
+version: "3"
+services:
+  nginx:
+    image: "nginx-vuejs"
+    build: .
+    container_name: "nginx-vuejs"
+    restart: always
+    env_file:
+      - "./.env"
+    ports:
+      - "80:80"
